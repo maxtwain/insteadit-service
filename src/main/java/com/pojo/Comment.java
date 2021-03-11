@@ -23,6 +23,10 @@ public class Comment {
         commentContent = commentEntity.getCommentContent();
         likeCount = commentEntity.getLikeCount();
 //        user = new User(commentEntity.getUserEntity());
-//        thread = new Thread(commentEntity.getThreadEntity());
+        thread = new Thread(commentEntity.getThreadEntity());
+    }
+    public Comment(String commentContent, Integer likeCount) {
+        this.commentContent = commentContent;
+        this.likeCount = likeCount;
     }
 }
